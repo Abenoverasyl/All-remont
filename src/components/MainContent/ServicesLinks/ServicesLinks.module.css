@@ -1,0 +1,28 @@
+.block {
+  padding: 20px;
+}
+
+.content img {
+  width: 100%;
+}
+
+.item {
+  color: greenyellow;
+}
+
+.block {
+  display: inline-block;
+  height: 600px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.block:nth-child(1) {
+  width: 72%;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.block:nth-child(2) {
+  width: 20%;
+}

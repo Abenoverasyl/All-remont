@@ -1,0 +1,13 @@
+.appWrapper {
+    width: 100%;
+    background-color: #edeef0;
+}
+
+.appBody {
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}

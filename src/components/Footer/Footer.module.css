@@ -1,0 +1,31 @@
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    margin-top: 15px;
+    padding: 30px 10px;
+}
+
+.footer .item {
+    display: inline-block;
+    width: 23%;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.menuItem {
+    display: block;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff !important;
+}
+
+.RequestCall {
+    background-color: #009e0f;
+    padding: 10px 25px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
