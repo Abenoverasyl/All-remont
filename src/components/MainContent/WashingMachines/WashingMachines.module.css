@@ -1,0 +1,27 @@
+.content {
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+}
+
+.item {
+  color: greenyellow;
+}
+
+.block {
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.welcome {
+  vertical-align: top;
+  display: inline-block;
+  width: 49%;
+  font-weight: 600
+}
+
+.welcome:nth-child(1) {
+  text-align: right;
+}
