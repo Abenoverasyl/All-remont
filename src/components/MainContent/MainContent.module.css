@@ -45,3 +45,44 @@ input[type=submit] {
   background-color: #0095ff;
   color: #ffffff;
 }
+
+.blockHowWeWork {
+  margin-top: 130px;
+}
+
+.blockWeWorkName {
+  width: 100%;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.itemsWeWork {
+
+}
+
+.itemWeWork {
+  width: 20%;
+  text-align: left;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
+
+.itemImage {
+  width: 100%;
+  text-align: center;
+}
+
+.itemImage img {
+  width: 80px;
+  height: 80px;
+}
+
+.itemTitle {
+
+}
+
+.itemText {
+
+}

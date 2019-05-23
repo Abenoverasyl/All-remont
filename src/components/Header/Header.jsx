@@ -6,7 +6,8 @@ const Header = () => {
         <header className={s.header}>
             <div className={s.item}>
                 <div className={s.logo}>
-                    <img src="https://stir-profi.ru/images/brand/logo-stir-profi.png" alt=""/>
+                    {/*<img src="https://stir-profi.ru/images/brand/logo-stir-profi.png" alt=""/>*/}
+                    ALL-REMONT
                 </div>
             </div>
             <div className={s.item}>
