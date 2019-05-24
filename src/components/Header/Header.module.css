@@ -17,10 +17,14 @@
     vertical-align: middle;
 }
 
-.logo {
-    color: #000;
+.logoTitle {
+    color: #747474;
     font-size: 25px;
     font-family: "Arial Black";
+}
+
+.logoDescription {
+    font-size: 14px;
 }
 
 .item:nth-child(1) {

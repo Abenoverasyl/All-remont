@@ -1,24 +1,22 @@
 import React from 'react';
 import s from '../Footer/Footer.module.css';
 
-let menuItems = [
-    {name: 'Главная', link: 'main'},
-    {name: 'Контакты', link: 'contacts'},
-    {name: 'Хозяйке на заметку', link: 'notesForMistress '},
-    {name: 'Вопрос-ответ', link: 'questionAnswer'},
-];
 
-
-const Footer = () => {
+const Footer = (props) => {
     return (
         <div className={s.footer}>
             <div className={s.item}>
-                <div className="phone"><a href="tel:+77476372585">+7(747) 637 2585</a></div>
-                <div className="phone"><a href="tel:+77714120514">+7(771) 412 0514</a></div>
+                {
+                    props.headerElements.phones.map((phone) => {
+                        return (
+                            <div className={s.phone}><a href={"tel:" + phone.number}>{phone.name}</a></div>
+                        )
+                    })
+                }
             </div>
             <div className={s.item}>
                 {
-                    menuItems.map((menuItem, key) => {
+                    props.menuItems.map((menuItem) => {
                         return (
                             <div className={s.menuItem}>
                                 <a className={menuItem.link + ' footerLink'} href={menuItem.link}>{menuItem.name}</a>

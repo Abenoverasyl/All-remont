@@ -1,13 +1,13 @@
 import React from 'react';
 import s from '../Header/Header.module.css';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <header className={s.header}>
             <div className={s.item}>
                 <div className={s.logo}>
-                    {/*<img src="https://stir-profi.ru/images/brand/logo-stir-profi.png" alt=""/>*/}
-                    ALL-REMONT
+                    <div className={s.logoTitle}>ALL-REMONT.KZ</div>
+                    <div className={s.logoDescription}>Ремонт бытовых техник в Алматы</div>
                 </div>
             </div>
             <div className={s.item}>
@@ -15,8 +15,13 @@ const Header = () => {
                 <div className="city">в городе Алматы</div>
             </div>
             <div className={s.item}>
-                <div className={s.phone}><a href="tel:+77476372585">+7(747) 637 2585</a></div>
-                <div className={s.phone}><a href="tel:+77714120514">+7(771) 412 0514</a></div>
+                {
+                    props.headerElements.phones.map((phone) => {
+                        return (
+                            <div className={s.phone}><a href={"tel:" + phone.number}>{phone.name}</a></div>
+                        )
+                    })
+                }
             </div>
             <div className={s.item}>
                 <div className="workTime">Работаем без выходных</div>

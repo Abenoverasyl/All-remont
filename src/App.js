@@ -5,14 +5,15 @@ import Menu from './components/Menu/Menu';
 import MainContent from './components/MainContent/MainContent';
 import Footer from './components/Footer/Footer';
 
-const App = () => {
+
+const App = (props) => {
     return (
         <div className={s.appWrapper}>
             <div className={s.appBody}>
-                <Header/>
-                <MainContent/>
-                <Menu/>
-                <Footer/>
+                <Header headerElements={props.state.headerElements}/>
+                <MainContent howWeWorks={props.state.howWeWorks}/>
+                <Menu menuItems={props.state.menuItems}/>
+                <Footer menuItems={props.state.menuItems} headerElements={props.state.headerElements}/>
             </div>
         </div>
     );

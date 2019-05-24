@@ -72,17 +72,19 @@ input[type=submit] {
 .itemImage {
   width: 100%;
   text-align: center;
+  line-height: 100px;
 }
 
 .itemImage img {
-  width: 80px;
-  height: 80px;
+  max-width: 70px;
+  max-height: 70px;
 }
 
 .itemTitle {
-
+  font-weight: 600;
 }
 
 .itemText {
-
+  font-size: 14px;
+  text-align: justify;
 }
