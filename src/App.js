@@ -10,10 +10,10 @@ const App = (props) => {
     return (
         <div className={s.appWrapper}>
             <div className={s.appBody}>
-                <Header headerElements={props.state.headerElements}/>
+                <Header contacts={props.state.contacts}/>
                 <MainContent howWeWorks={props.state.howWeWorks}/>
                 <Menu menuItems={props.state.menuItems}/>
-                <Footer menuItems={props.state.menuItems} headerElements={props.state.headerElements}/>
+                <Footer menuItems={props.state.menuItems} contacts={props.state.contacts}/>
             </div>
         </div>
     );

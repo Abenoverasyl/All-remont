@@ -7,7 +7,7 @@ const Footer = (props) => {
         <div className={s.footer}>
             <div className={s.item}>
                 {
-                    props.headerElements.phones.map((phone) => {
+                    props.contacts.phones.map((phone) => {
                         return (
                             <div className={s.phone}><a href={"tel:" + phone.number}>{phone.name}</a></div>
                         )
