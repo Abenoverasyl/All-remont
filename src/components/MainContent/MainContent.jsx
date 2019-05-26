@@ -4,6 +4,9 @@ import WashingMachines from "./WashingMachines/WashingMachines";
 import Refrigerators from "./Refrigerators/Refrigerators"
 import GasStoves from "./GasStoves/GasStoves"
 import {Route} from "react-router-dom"
+import HouseholdAppliances from "./HouseholdAppliances/HouseholdAppliances";
+import ServicesLinks from "./ServicesLinks/ServicesLinks";
+import BelieveUs from "./BelieveUs/BelieveUs";
 
 
 const MainContent = (props) => {
@@ -11,17 +14,20 @@ const MainContent = (props) => {
         <div className={s.content}>
             <div className={s.block}>
                 <div>
-                    <Route path='/main' exact component={WashingMachines}/>
+                    <Route path='/' exact component={HouseholdAppliances}/>
+                    <Route path='/washingMachines' exact component={WashingMachines}/>
                     <Route path='/refrigerators' component={Refrigerators}/>
                     <Route path='/gasStoves' component={GasStoves}/>
                 </div>
             </div>
             <div className={s.block}>
-                <div className="formSend">
+                <div className={s.formSend}>
                     <form action="/action_page.php">
-                        <input type="text" name="FirstName" placeholder="Ваше имя"/>
-                        <input type="text" name="LastName" placeholder="+7 (___) ___ __ __"/>
-                        <input type="submit" value="Отправить"/>
+                        <div className={s.callBackItem}>ПОЛУЧИТЕ СКИДКУ 20% ЗА ОНЛАЙН ЗАКАЗ</div>
+                        <div className={s.callBackItem}>
+                            <input type="text" name="LastName" placeholder="+7 (___) ___ __ __"/>
+                            <input type="submit" value="Получить скидку >"/>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -45,6 +51,8 @@ const MainContent = (props) => {
                     }
                 </div>
             </div>
+            <BelieveUs />
+            <ServicesLinks />
         </div>
     )
 }

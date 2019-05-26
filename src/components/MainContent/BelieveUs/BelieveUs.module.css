@@ -1,0 +1,30 @@
+.content {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.titleBelieveUs {
+  font-size: 45px;
+  max-width: 70%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.block {
+  display: inline-block;
+  width: 49%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  vertical-align: top;
+}
+
+.imageAbout {
+
+}
+
+.textAbout {
+  font-style: italic;
+  font-size: 16px;
+  text-align: justify;
+  padding: 20px;
+}

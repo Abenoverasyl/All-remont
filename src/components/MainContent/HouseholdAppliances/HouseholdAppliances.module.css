@@ -1,0 +1,29 @@
+.content {
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+}
+
+.item {
+  color: greenyellow;
+}
+
+.block {
+  display: inline-block;
+  height: 600px;
+  background-color: #ffffff;
+  border-radius: 5px;
+
+}
+
+.welcome {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+
+.welcome:nth-child(1) {
+  text-align: right;
+}

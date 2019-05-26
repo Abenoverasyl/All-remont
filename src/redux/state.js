@@ -1,6 +1,6 @@
 let state = {
     menuItems: [
-        {name: 'Главная', link: 'main'},
+        {name: 'Главная', link: '/'},
         {name: 'Контакты', link: 'refrigerators'},
         {name: 'Хозяйке на заметку', link: 'notesForMistress '},
         {name: 'Вопрос-ответ', link: 'questionAnswer'},

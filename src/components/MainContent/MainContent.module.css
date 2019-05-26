@@ -44,6 +44,7 @@ input[type=submit] {
   border: none;
   background-color: #0095ff;
   color: #ffffff;
+  border-radius: 5px;
 }
 
 .blockHowWeWork {
@@ -76,8 +77,8 @@ input[type=submit] {
 }
 
 .itemImage img {
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .itemTitle {
@@ -85,6 +86,20 @@ input[type=submit] {
 }
 
 .itemText {
-  font-size: 14px;
-  text-align: justify;
+  font-size: 16px;
 }
+
+.callBackItem {
+  display: inline-block;
+}
+
+.formSend {
+  background-color: #7facaea8;
+  border-radius: 8px;
+  border: solid 2px #e6e6e6;
+}
+
+.callBackItem:nth-child(1) {
+  color: #ffffff;
+}
+
